@@ -1,0 +1,18 @@
+<div class="containerbudget">
+    <div>
+        <i class="calculator" class="fa-solid fa-calculator custom-size"></i>
+    </div>
+    <div>
+        <ul>
+            @for(Service of budgetList; track Service.Detail){
+                <li>
+                    {{Service.Detail}}: {{Service.Price}}
+                </li>
+            }
+            <!--
+            <li *ngFor="let Service of budgetList">
+                 {{Service.Detail}}: {{Service.Price}}
+            </li>--->
+        </ul>
+    </div>
+</div>
