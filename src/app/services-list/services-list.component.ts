@@ -10,7 +10,7 @@ import {Service} from '../services-list/service';
   templateUrl: './services-list.component.html',
   styleUrl: './services-list.component.scss'
 })
-export class ServicesListComponent  {
+export class ServicesListComponent implements OnInit {
    services: Service [] = [
     {
       Detail : 'Diseño completo de merchandasing',
@@ -35,14 +35,14 @@ export class ServicesListComponent  {
   
    constructor(private budget: ServiceBudgetService){
    }
+   ngOnInit(): void {
 
+   }
    addToBudget(services:Service):void{
      console.log('adding service:',services)
      this.budget.addToBudget(services);
      
    }
 
-   ngOnInit(): void {
-   }
 }
 
