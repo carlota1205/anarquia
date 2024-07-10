@@ -4,10 +4,12 @@ import { RouterOutlet, RouterModule } from '@angular/router';
 import {AnarquiaServicesComponent} from './anarquia-services/anarquia-services.component';
 import {AnarquiaContactComponent} from './anarquia-contact/anarquia-contact.component';
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,RouterOutlet,RouterModule,AnarquiaServicesComponent,AnarquiaContactComponent],
+  imports: [CommonModule,RouterOutlet,RouterModule,AnarquiaContactComponent,AnarquiaServicesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -2,13 +2,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceBudgetService } from '../service-budget.service';
 import { Service } from '../services-list/service';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
   selector: 'app-create-budget',
   standalone: true,
   imports: [],
-  providers:[ServiceBudgetService],
+  providers:[ServiceBudgetService,HttpClient ],
   templateUrl: './create-budget.component.html',
   styleUrl: './create-budget.component.scss'
 })
