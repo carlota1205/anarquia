@@ -2,27 +2,26 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceBudgetService } from '../service-budget.service';
 import { Service } from '../services-list/service';
-import { HttpClient } from '@angular/common/http';
-
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-create-budget',
   standalone: true,
-  imports: [],
-  providers:[ServiceBudgetService,HttpClient ],
+  imports: [ CommonModule ],
+  providers:[ServiceBudgetService],
   templateUrl: './create-budget.component.html',
   styleUrl: './create-budget.component.scss'
 })
 export class CreateBudgetComponent implements OnInit{
 
-  budgetList: Service[]  | undefined;
+  budgetList: Service[] = [];
  
   constructor(private budget: ServiceBudgetService ){
     this.budget.budgetList.subscribe(b => this.budgetList = b);
-       console.log('?:', this.budgetList)
+    console.log('Subscribed budgetList:', this.budgetList);
   }
  
-  ngOnInit():void{
-     
-  }
+  ngOnInit():void{ }
+  
 }
+

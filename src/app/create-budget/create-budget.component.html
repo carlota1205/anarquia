@@ -4,15 +4,14 @@
     </div>
     <div>
         <ul>
-            @for(Service of budgetList; track Service.Detail){
-                <li>
-                    {{Service.Detail}}: {{Service.Price}}
-                </li>
+            @for(service of budgetList; track service.Detail){
+                <li>{{service.Detail}}: {{service.Price}}</li>
             }
-            <!--
-            <li *ngFor="let Service of budgetList">
-                 {{Service.Detail}}: {{Service.Price}}
-            </li>--->
+            @empty {
+                <li> N O  H A Y  S E R V I C I O S  P A R A  M O S T R A R</li>
+            }
         </ul>
     </div>
 </div>
+
+

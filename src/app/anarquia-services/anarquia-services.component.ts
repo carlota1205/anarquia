@@ -11,6 +11,7 @@ import {CreateBudgetComponent} from '../create-budget/create-budget.component';
 export class AnarquiaServicesComponent {
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 }
+
+
