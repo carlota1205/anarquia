@@ -7,6 +7,9 @@ sede: Tandil
 
 Anarquia es una single page donde se muestran servicios graficos, los cuales pueden ser agregados a una lista con el fin de crear un presupuesto.
 
+-------
+Aclaracion la lista en el componente create-budget no se actualiza, realize varios cambios y no pude encontrar el error 
+-------
 
 
 
