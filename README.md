@@ -1,4 +1,33 @@
-<<<<<<< HEAD
+Nombre: Carlota Agustina
+Apellido: Loustau
+email: caritoloustau@gmail
+sede: Tandil
+
+
+
+Anarquia es una single page donde se muestran servicios graficos, los cuales pueden ser agregados a una lista con el fin de crear un presupuesto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 # anarquia
 =======
 # Anarquia
