@@ -60,7 +60,7 @@ export class ServicesListComponent implements OnInit {
       "Detail": "Afiche",
       "Categorie": "Publicidad",
       "Price": 38623,
-      "Image": "img/CLAPTONERIO afiche-copia.jpg",
+      "Image": "img/CLAPTONERIO.jpg",
      
     },
     {
