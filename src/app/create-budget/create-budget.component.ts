@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
   selector: 'app-create-budget',
   standalone: true,
   imports: [ CommonModule ],
-  providers:[ServiceBudgetService],
   templateUrl: './create-budget.component.html',
   styleUrl: './create-budget.component.scss'
 })
@@ -17,11 +16,13 @@ export class CreateBudgetComponent implements OnInit{
   budgetList: Service[] = [];
  
   constructor(private budget: ServiceBudgetService ){
+    
+  }
+ 
+  ngOnInit():void{
     this.budget.budgetList.subscribe(b => this.budgetList = b);
     console.log('Subscribed budgetList:', this.budgetList);
   }
- 
-  ngOnInit():void{ }
   
 }
 

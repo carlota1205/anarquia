@@ -6,7 +6,6 @@ import {Service} from '../services-list/service';
   selector: 'app-services-list',
   standalone: true,
   imports: [],
-  providers:[ServiceBudgetService],
   templateUrl: './services-list.component.html',
   styleUrl: './services-list.component.scss'
 })
