@@ -6,11 +6,13 @@
         <ul>
             @for(service of budgetList; track service.Detail){
                 <li>{{service.Detail}}: {{service.Price}}</li>
+                
             }
             @empty {
                 <li> N O  H A Y  S E R V I C I O S  P A R A  M O S T R A R</li>
             }
         </ul>
+        <h1>T O T A L : {{ total }}</h1>
     </div>
 </div>
 

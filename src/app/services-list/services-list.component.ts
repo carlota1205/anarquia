@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import { ServiceBudgetService } from '../service-budget.service';
 import {Service} from '../services-list/service';
 
+
+
 @Component({
   selector: 'app-services-list',
   standalone: true,
@@ -69,14 +71,15 @@ export class ServicesListComponent implements OnInit {
     }
    ];
 
+  
    constructor(private budget: ServiceBudgetService){ }
 
    ngOnInit(): void { }
    addToBudget(services:Service):void{
      console.log('adding service:',services)
      this.budget.addToBudget(services);
-     
    }
+  
 
 }
 

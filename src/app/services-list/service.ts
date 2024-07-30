@@ -1,6 +1,6 @@
 export interface Service{
-    Detail : String;
-    Categorie:String;
-    Price:Number;
-    Image:String;
+    Detail : string;
+    Categorie:string;
+    Price:number;
+    Image:string;
 }

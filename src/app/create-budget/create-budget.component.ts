@@ -14,15 +14,27 @@ import { CommonModule } from '@angular/common';
 export class CreateBudgetComponent implements OnInit{
 
   budgetList: Service[] = [];
- 
+  total: number = 0;
   constructor(private budget: ServiceBudgetService ){
     
   }
  
-  ngOnInit():void{
-    this.budget.budgetList.subscribe(b => this.budgetList = b);
-    console.log('Subscribed budgetList:', this.budgetList);
-  }
   
+  ngOnInit(): void {
+    this.budget.budgetList.subscribe(b => {
+      this.budgetList = b;
+      this.calculateTotal();
+      console.log('Subscribed budgetList:', this.budgetList);
+    });
+  }
+
+  calculateTotal(): number {
+    // Calcular el total sumando los precios de los servicios
+    this.total = this.budgetList.reduce((sum, service) => sum + service.Price, 0);
+    return this.total;
+  }
+ 
+
+
 }
 
